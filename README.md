@@ -1,3 +1,3 @@
 # GamingMice
 
-This is the greates gaming micing of all time!
+This is the greatest gaming micing of all time!
