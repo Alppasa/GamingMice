@@ -82,6 +82,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#hasLights -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#hasLights">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#heightInCentimeters -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#heightInCentimeters">
@@ -109,23 +118,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#lightColors -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#lightColors">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#lightHasDifferentModes -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#lightHasDifferentModes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#maximumDPI -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#maximumDPI">
@@ -143,6 +135,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Sensor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#supportsRgb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#supportsRgb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -279,7 +280,6 @@
         <heightInCentimeters rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</heightInCentimeters>
         <isTunable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTunable>
         <lengthInCentimeters rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</lengthInCentimeters>
-        <lightHasDifferentModes rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</lightHasDifferentModes>
         <maximumDPI rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</maximumDPI>
         <name>G 403 Wired</name>
         <widthInCentimeters rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</widthInCentimeters>
