@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1526054031241" name="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8" uri="gaming_mouse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1526112211005" name="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8" uri="gaming_mouse.owl"/>
     </group>
 </catalog>
