@@ -10,7 +10,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:ontology="http://dbpedia.org/ontology/">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8">
+        <owl:imports rdf:resource="http://dbpedia.org/ontology/Colour"/>
+        <owl:imports rdf:resource="file:/C:/Users/alp.akduman/Downloads/colour_instances.ttl"/>
+    </owl:Ontology>
     
 
 
@@ -408,7 +411,7 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
     </owl:Class>
     
 
@@ -427,17 +430,14 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Abyssus_V2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Abyssus_V2">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Colour"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#LeftHandedMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SymmetricGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3329"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -456,16 +456,13 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Basilisk -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Basilisk">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Colour"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3389"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -484,16 +481,13 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Deathadder_Elite -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Deathadder_Elite">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Colour"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3389"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -513,10 +507,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#G_403_Wired">
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#logitech"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Logitech"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3366"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</amountOfButtons>
         <heightInMillimeter rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.0</heightInMillimeter>
@@ -535,12 +531,11 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#G_502_Proteus_Spectrum">
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#logitech"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Logitech"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3360"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -560,12 +555,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#G_903">
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#LeftHandedMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SymmetricGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#logitech"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Logitech"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3366"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -577,6 +572,24 @@
         <supportsRgb rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</supportsRgb>
         <weightInGram rdf:datatype="http://www.w3.org/2001/XMLSchema#float">110.0</weightInGram>
         <widthInMillimeter rdf:datatype="http://www.w3.org/2001/XMLSchema#float">66.5</widthInMillimeter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Logitech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Logitech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
+        <name>Logitech</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
+        <name>Omron</name>
     </owl:NamedIndividual>
     
 
@@ -617,19 +630,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
+        <name>Razer</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer-Switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Razer-Switch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
+        <name>Razer-Switch</name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Rival_500 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Rival_500">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Colour"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#steelSeries"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SteelSeries"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3360"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -648,15 +676,13 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Rival_600 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Rival_600">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/Colour"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ErgonomicGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#OpticalSensor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#steelSeries"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SteelSeries"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3360"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -680,8 +706,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#RightHandedMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SymmetricGamingMouse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
-        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron"/>
-        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#steelSeries"/>
+        <ontology:colour rdf:resource="http://dbpedia.org/resource/Black"/>
+        <buttonSwitch rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Omron"/>
+        <manufacturer rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SteelSeries"/>
         <sensor rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Pixart_PMW-3360"/>
         <amountOfButtons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</amountOfButtons>
         <hasLights rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasLights>
@@ -695,45 +722,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#logitech -->
+    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SteelSeries -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#logitech">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <name>Logitech</name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#omron">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
-        <name>Omron</name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
-        <name>Razer</name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer-switch -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#razer-switch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#ButtonSwitch"/>
-        <name>Razer-Switch</name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#steelSeries -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#steelSeries">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#SteelSeries">
         <rdf:type rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#Manufacturer"/>
         <name>SteelSeries</name>
     </owl:NamedIndividual>
