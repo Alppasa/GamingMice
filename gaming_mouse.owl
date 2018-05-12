@@ -411,7 +411,7 @@
     <!-- http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WirelessGamingMouse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#WiredGamingMouse"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#GamingMouse"/>
     </owl:Class>
     
 
