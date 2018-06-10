@@ -54,26 +54,37 @@ public class OntologyQueries {
 //		    "      }";
 		
 		List<String> queryStrings = new ArrayList<>();
+		List<String> descriptions = new ArrayList<>();
+		
+		descriptions.add("Query all gaming mice that have a tunable weight.");
 		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
 				+ "SELECT DISTINCT ?manufacturer ?name WHERE "
 				+ "{?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
+		
+		descriptions.add("Query the logitech G903.");
 		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
 				+ "SELECT DISTINCT ?model WHERE "
 				+ "{?m gm:name \"G 903\" . ?m gm:name ?model }");
+		
+		descriptions.add("Query all gaming mice that have a sensor with a DPI > 10000.");
 		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
-				+ "SELECT DISTINCT ?sensor ?name ?max_dpi WHERE "
+				+ "SELECT DISTINCT ?name ?sensor ?max_dpi WHERE "
 				+ "{?m gm:name ?name. ?m gm:sensor ?sensor . ?m gm:maximumDPI ?max_dpi . FILTER (?max_dpi > 10000)} "
 				+ "ORDER BY DESC(?max_dpi)");
 		
 		 
-		for (String q: queryStrings) {
+		for (int i = 0; i < queryStrings.size(); i++) {
+			String description = descriptions.get(i);
+			String q = queryStrings.get(i);
 			Query query = QueryFactory.create(q);
 			// Execute the query and obtain results
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			ResultSet results = qe.execSelect();
 			
 			// Output query results 
+			System.out.println(description);
 			ResultSetFormatter.out(System.out, results, query);
+			System.out.println("\n\n");
 			
 			// Important - free up resources used running the query
 			qe.close();			
