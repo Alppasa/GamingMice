@@ -5,7 +5,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
 
@@ -49,22 +52,24 @@ public class OntologyQueries {
 //		    "      ?contributor foaf:name \"Jon Foobar\" . " +
 //		    "      ?contributor foaf:weblog ?url . " +
 //		    "      }";
-		String queryString = "PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
-				+ "SELECT DISTINCT ?manufacturer ?name WHERE {?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}";
-		String testQuery2 = 
-				"PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> SELECT DISTINCT ?GamingMouse WHERE {?OpticalSensor gm:name \"G 903\" . }";
-
+		
+		List<String> queryStrings = new ArrayList<>();
+		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
+				+ "SELECT DISTINCT ?manufacturer ?name WHERE {?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
+		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> SELECT DISTINCT ?model WHERE {?m gm:name \"G 903\" . ?m gm:name ?model }");
 		 
-		Query query = QueryFactory.create(queryString);
+		for (String q: queryStrings) {
+			Query query = QueryFactory.create(q);
+			// Execute the query and obtain results
+			QueryExecution qe = QueryExecutionFactory.create(query, model);
+			ResultSet results = qe.execSelect();
+			
+			// Output query results 
+			ResultSetFormatter.out(System.out, results, query);
+			
+			// Important - free up resources used running the query
+			qe.close();			
+		}
 		 
-		// Execute the query and obtain results
-		QueryExecution qe = QueryExecutionFactory.create(query, model);
-		ResultSet results = qe.execSelect();
-		 
-		// Output query results 
-		ResultSetFormatter.out(System.out, results, query);
-		 
-		// Important - free up resources used running the query
-		qe.close();
 	}
 }
