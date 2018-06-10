@@ -29,7 +29,7 @@ public class OntologyQueries {
 
 	public static void main(String[] args) throws IOException {
 		// Open the bloggers RDF graph from the filesystem
-		InputStream in = new FileInputStream(new File("/home/vince/Documents/Studium/Module/semantic_modeling/ontology_gm/gaming_mouse.owl"));
+		InputStream in = new FileInputStream(new File("Ontologies/gaming_mouse.owl"));
 		 
 		// Create an empty in-memory model and populate it from the graph
 		Model model = ModelFactory.createOntologyModel();
@@ -50,8 +50,12 @@ public class OntologyQueries {
 //		    "      ?contributor foaf:weblog ?url . " +
 //		    "      }";
 		String queryString = "SELECT ?name";
+		String testQuery2 = 
+				"PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> SELECT DISTINCT ?GamingMouse WHERE {?OpticalSensor gm:name \"G 903\" . }";
+
+
 		 
-		Query query = QueryFactory.create(queryString);
+		Query query = QueryFactory.create(testQuery2);
 		 
 		// Execute the query and obtain results
 		QueryExecution qe = QueryExecutionFactory.create(query, model);
