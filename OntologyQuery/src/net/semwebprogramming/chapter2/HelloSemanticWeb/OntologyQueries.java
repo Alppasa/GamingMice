@@ -61,7 +61,7 @@ public class OntologyQueries {
 				+ "SELECT DISTINCT ?manufacturer ?name WHERE "
 				+ "{?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
 		
-		descriptions.add("Query the logitech G903.");
+		descriptions.add("Query the Logitech G903.");
 		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
 				+ "SELECT DISTINCT ?model WHERE "
 				+ "{?m gm:name \"G 903\" . ?m gm:name ?model }");
@@ -72,6 +72,10 @@ public class OntologyQueries {
 				+ "{?m gm:name ?name. ?m gm:sensor ?sensor . ?m gm:maximumDPI ?max_dpi . FILTER (?max_dpi > 10000)} "
 				+ "ORDER BY DESC(?max_dpi)");
 		
+		descriptions.add("Query all gaming mice that can be used by left-handers.");
+		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
+				+ "SELECT DISTINCT ?manufacturer ?name WHERE "
+				+ "{?m a gm:LeftHandedMouse . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
 		 
 		for (int i = 0; i < queryStrings.size(); i++) {
 			String description = descriptions.get(i);
