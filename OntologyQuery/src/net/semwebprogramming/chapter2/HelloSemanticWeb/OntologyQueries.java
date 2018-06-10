@@ -55,8 +55,16 @@ public class OntologyQueries {
 		
 		List<String> queryStrings = new ArrayList<>();
 		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
-				+ "SELECT DISTINCT ?manufacturer ?name WHERE {?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
-		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> SELECT DISTINCT ?model WHERE {?m gm:name \"G 903\" . ?m gm:name ?model }");
+				+ "SELECT DISTINCT ?manufacturer ?name WHERE "
+				+ "{?m gm:isTunable True . ?m gm:name ?name. ?m gm:manufacturer ?manufacturer}");
+		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
+				+ "SELECT DISTINCT ?model WHERE "
+				+ "{?m gm:name \"G 903\" . ?m gm:name ?model }");
+		queryStrings.add("PREFIX gm: <http://www.semanticweb.org/vince/ontologies/2018/4/untitled-ontology-8#> "
+				+ "SELECT DISTINCT ?sensor ?name ?max_dpi WHERE "
+				+ "{?m gm:name ?name. ?m gm:sensor ?sensor . ?m gm:maximumDPI ?max_dpi . FILTER (?max_dpi > 10000)} "
+				+ "ORDER BY DESC(?max_dpi)");
+		
 		 
 		for (String q: queryStrings) {
 			Query query = QueryFactory.create(q);
